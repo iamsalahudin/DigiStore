@@ -1,0 +1,102 @@
+[
+  {
+    "ID": 1,
+    "Name": "Bowl Set 1",
+    "Price": 1000,
+    "Discount": 200,
+    "Desp": "Bowls just designed for you",
+    "Category": "crockery",
+    "Images": ["/images/bowl_set_a101.jpg"]
+  },
+  {
+    "ID": 2,
+    "Name": "Bracelet 1",
+    "Price": 1000,
+    "Discount": 200,
+    "Desp": "Bracelet just designed for you",
+    "Category": "crockery",
+    "Images": ["/images/bracelet_a101.jpg"]
+  },
+  {
+    "ID": 3,
+    "Name": "Decoration Flower Pot",
+    "Price": 1000,
+    "Discount": 200,
+    "Desp": "Decoration Flower Pot just designed for you",
+    "Category": "decor",
+    "Images": ["/images/decor_a101.jpg"]
+  },
+  {
+    "ID": 4,
+    "Name": "Decoration Hanging Piece 1",
+    "Price": 1000,
+    "Discount": 200,
+    "Desp": "Decoration Hanging Piece just designed for you",
+    "Category": "decor",
+    "Images": ["/images/decor_b101.jpg"]
+  },
+  {
+    "ID": 5,
+    "Name": "Decoration Hanging Piece 2",
+    "Price": 1000,
+    "Discount": 200,
+    "Desp": "Decoration Hanging Piece just designed for you",
+    "Category": "decor",
+    "Images": ["/images/decor_b201.jpg"]
+  },
+  {
+    "ID": 6,
+    "Name": "Decoration Hanging Piece 2",
+    "Price": 1000,
+    "Discount": 200,
+    "Desp": "Decoration Hanging Piece just designed for you",
+    "Category": "decor",
+    "Images": ["/images/decor_b301.jpg"]
+  },
+  {
+    "ID": 7,
+    "Name": "Decoration Lamp",
+    "Price": 1000,
+    "Discount": 200,
+    "Desp": "Decoration Lamp just designed for you",
+    "Category": "decor",
+    "Images": ["/images/decor_lamp_a101.jpg"]
+  },
+  {
+    "ID": 8,
+    "Name": "Decoration Mirror",
+    "Price": 1000,
+    "Discount": 200,
+    "Desp": "Decoration Mirror just designed for you",
+    "Category": "decor",
+    "Images": ["/images/decor_mirror_a101.jpg"]
+  },
+  {
+    "ID": 9,
+    "Name": "Decoration Stool",
+    "Price": 1000,
+    "Discount": 200,
+    "Desp": "Decoration Stool just designed for you",
+    "Category": "decor",
+    "Images": ["/images/decor_stool_a101.jpg"]
+  },
+  {
+    "ID": 10,
+    "Name": "Decoration Texture Tiles Scenery Circle",
+    "Price": 1000,
+    "Discount": 200,
+    "Desp": "Decoration Texture Tiles Scenery just designed for you",
+    "Category": "decor",
+    "Images": ["/images/decor_texture_tiles_a101.jpg"]
+  },
+  {
+    "ID": 11,
+    "Name": "Decoration Texture Tiles Scenery Abstact",
+    "Price": 1000,
+    "Discount": 200,
+    "Desp": "Decoration Texture Tiles Scenery just designed for you",
+    "Category": "decor",
+    "Images": ["/images/decor_texture_tiles_a201.jpg"]
+  }
+]
+
