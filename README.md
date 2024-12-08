@@ -1,2 +1,1 @@
-# DigiStore
-Digital Products Store
+
