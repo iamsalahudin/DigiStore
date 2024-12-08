@@ -6,26 +6,27 @@ import Link from "next/link";
 import Products from "./pages/productdetails/productsData.json"
 import Productcard from "/src/app/(components)/productcard/productcard";
 import TestimonialCard from "./(components)/Testimonial/Testimonial";
+import { FaSellsy } from "react-icons/fa";
 
 const Page = () => {
   const testimonialData = [
     {
-      icon: <AiOutlineShop />,
+      icon: <FaSellsy />,
       value: '10.5k',
       description: 'Sellers active on our site',
     },
     {
-      icon: <AiOutlineDollar />,
+      icon:<FaSellsy />,
       value: '33k',
       description: 'Monthly Product Sale',
     },
     {
-      icon: <AiOutlineGift />,
+      icon: <FaSellsy />,
       value: '45.5k',
       description: 'Customers active on our site',
     },
     {
-      icon: <AiOutlineMoneyCollect />,
+      icon: <FaSellsy />,
       value: '25k',
       description: 'Annual gross sale on our site',
     },
