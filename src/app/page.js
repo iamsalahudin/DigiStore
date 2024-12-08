@@ -3,7 +3,7 @@ import React from "react";
 import Carousel from "./(components)/Carousel/carousel";
 import HeadingBar from "./(components)/headingBar/headingBar.js";
 import Link from "next/link";
-import Products from "./pages/productdetails/productsData.json"
+import Products from "./productdetails/productsData.json"
 import Productcard from "/src/app/(components)/productcard/productcard";
 import TestimonialCard from "./(components)/Testimonial/Testimonial";
 import { FaSellsy } from "react-icons/fa";
