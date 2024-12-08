@@ -5,8 +5,31 @@ import HeadingBar from "./(components)/headingBar/headingBar.js";
 import Link from "next/link";
 import Products from "./pages/productdetails/productsData.json"
 import Productcard from "/src/app/(components)/productcard/productcard";
+import TestimonialCard from "./(components)/Testimonial/Testimonial";
 
 const Page = () => {
+  const testimonialData = [
+    {
+      icon: <AiOutlineShop />,
+      value: '10.5k',
+      description: 'Sellers active on our site',
+    },
+    {
+      icon: <AiOutlineDollar />,
+      value: '33k',
+      description: 'Monthly Product Sale',
+    },
+    {
+      icon: <AiOutlineGift />,
+      value: '45.5k',
+      description: 'Customers active on our site',
+    },
+    {
+      icon: <AiOutlineMoneyCollect />,
+      value: '25k',
+      description: 'Annual gross sale on our site',
+    },
+  ];
   return (
     <>
       <main className="">
@@ -116,6 +139,12 @@ const Page = () => {
           ))}
         </div>
       </main>
+
+      <div className="p-6">
+      <h1 className="text-center text-2xl font-bold mb-6">Our Statistics</h1>
+      <TestimonialCard data={testimonialData} />
+      </div>
+      
     </>
   );
 };

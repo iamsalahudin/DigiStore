@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import pik from "/public/images/logo.jpg"
-import File from "/src/app/(components)/file"
 
 import Link from 'next/link';
 
@@ -17,7 +16,6 @@ export default function Header() {
           />
         </div>
 
-        <File/>
 
         {/* Center Section: Navigation */}
         <nav className="hidden lg:flex space-x-8">
