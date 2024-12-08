@@ -11,7 +11,7 @@ const Page = () => {
     <>
       <main className="">
         <div className="flex">
-          <nav className="hidden lg:flex space-y-1 lg:flex-col w-1/3 px-20">
+          <nav className="hidden lg:flex space-y=-1 lg:flex-col w-1/3 px-20">
             <Link
               href="/"
               className="text-gray-700  font-semibold hover:text-red-500 transition duration-200"

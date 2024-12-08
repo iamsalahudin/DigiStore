@@ -1,7 +1,5 @@
 import Image from 'next/image'
 import pik from "/public/images/logo.jpg"
-import File from "/src/app/(components)/file"
-
 import Link from 'next/link';
 
 export default function Header() {
@@ -16,8 +14,6 @@ export default function Header() {
             className="w-32 lg:w-32 lg:h-24"
           />
         </div>
-
-        <File/>
 
         {/* Center Section: Navigation */}
         <nav className="hidden lg:flex space-x-8">
