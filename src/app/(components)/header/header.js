@@ -14,7 +14,6 @@ export default function Header() {
             className="w-32 lg:w-32 lg:h-24"
           />
         </div>
-
         {/* Center Section: Navigation */}
         <nav className="hidden lg:flex space-x-8">
           <Link href="/" className="text-gray-700  font-semibold hover:text-red-500 transition duration-200">
