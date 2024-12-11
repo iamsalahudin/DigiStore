@@ -5,8 +5,32 @@ import HeadingBar from "./(components)/headingBar/headingBar.js";
 import Link from "next/link";
 import Products from "./productdetails/productsData.json"
 import Productcard from "/src/app/(components)/productcard/productcard";
+import TestimonialCard from "./(components)/Testimonial/Testimonial";
+import { FaSellsy } from "react-icons/fa";
 
 const Page = () => {
+  const testimonialData = [
+    {
+      icon: <FaSellsy />,
+      value: '10.5k',
+      description: 'Sellers active on our site',
+    },
+    {
+      icon:<FaSellsy />,
+      value: '33k',
+      description: 'Monthly Product Sale',
+    },
+    {
+      icon: <FaSellsy />,
+      value: '45.5k',
+      description: 'Customers active on our site',
+    },
+    {
+      icon: <FaSellsy />,
+      value: '25k',
+      description: 'Annual gross sale on our site',
+    },
+  ];
   return (
     <>
       <main className="m-10">
@@ -116,6 +140,12 @@ const Page = () => {
           ))}
         </div>
       </main>
+
+      <div className="p-6">
+      <h1 className="text-center text-2xl font-bold mb-6">Our Statistics</h1>
+      <TestimonialCard data={testimonialData} />
+      </div>
+      
     </>
   );
 };
