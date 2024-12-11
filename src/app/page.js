@@ -15,21 +15,24 @@ const Page = () => {
       value: '10.5k',
       description: 'Sellers active on our site',
     },
-    {
-      icon:<FaSellsy />,
-      value: '33k',
-      description: 'Monthly Product Sale',
-    },
-    {
-      icon: <FaSellsy />,
-      value: '45.5k',
-      description: 'Customers active on our site',
-    },
-    {
-      icon: <FaSellsy />,
-      value: '25k',
-      description: 'Annual gross sale on our site',
-    },
+    
+  
+
+    // {
+    //   icon:<FaSellsy />,
+    //   value: '33k',
+    //   description: 'Monthly Product Sale',
+    // },
+    // {
+    //   icon: <FaSellsy />,
+    //   value: '45.5k',
+    //   description: 'Customers active on our site',
+    // },
+    // {
+    //   icon: <FaSellsy />,
+    //   value: '25k',
+    //   description: 'Annual gross sale on our site',
+    // },
   ];
   return (
     <>

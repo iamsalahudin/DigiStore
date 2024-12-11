@@ -17,12 +17,6 @@ const TestimonialCard = ({ data }) => {
     </div>
   );
 };
-    <>
-        <div className="container">
-        <i class="fa-brands fa-sellsy"></i>
-        </div>
-    </>
-  )
-}
+    
 
 export default TestimonialCard;
