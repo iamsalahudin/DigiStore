@@ -3,13 +3,13 @@ import React from "react";
 import Carousel from "./(components)/Carousel/carousel";
 import HeadingBar from "./(components)/headingBar/headingBar.js";
 import Link from "next/link";
-import Products from "./pages/productdetails/productsData.json"
+import Products from "./productdetails/productsData.json"
 import Productcard from "/src/app/(components)/productcard/productcard";
 
 const Page = () => {
   return (
     <>
-      <main className="">
+      <main className="m-10">
         <div className="flex">
           <nav className="hidden lg:flex space-y=-1 lg:flex-col w-1/3 px-20">
             <Link
@@ -110,7 +110,7 @@ const Page = () => {
           </div>
         </div>
         <HeadingBar title="Featured Products"/>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 m-10 lg:m-20">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 lg:m-20">
           {Products.map((product) => (
             <Productcard key={product.ProductID} product={product} />
           ))}
