@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-md">
-      <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8">
+    <header className="bg-white shadow-md sticky top-0 z-50 w-full">
+      <div className="container mx-auto flex items-center justify-between py-1 px-4 lg:px-8">
         {/* Left Section: Logo */}
         <div className="flex items-center space-x-4">
           <Image
@@ -50,7 +50,7 @@ export default function Header() {
           </button>
           <div className="input hidden  space-x-5 lg:flex items-center">
            <div className=' border-2 border-b-yellow-400 border-transparent p-1 '>
-             <input className='bg-transparent outline-none  text-black ' type="text" placeholder='search here' />
+             <input className='bg-transparent outline-none  text-black ' type="text" placeholder='Search...' />
             <i className="fa-solid fa-magnifying-glass"></i>
            </div>
             <i className="fa-brands fa-opencart"></i>
