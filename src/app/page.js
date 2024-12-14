@@ -6,39 +6,44 @@ import Link from "next/link";
 import Products from "./productdetails/productsData.json"
 import Productcard from "/src/app/(components)/productcard/productcard";
 import TestimonialCard from "./(components)/Testimonial/Testimonial";
-import { FaSellsy } from "react-icons/fa";
+import { AiFillCustomerService } from "react-icons/ai";
+import { MdCategory, MdHighQuality } from "react-icons/md";
+import { FaTruck } from "react-icons/fa";
+import { MdOutlinePhoneIphone } from "react-icons/md";
 
 const Page = () => {
   const testimonialData = [
     {
-      icon: <FaSellsy />,
-      value: '10.5k',
-      description: 'Sellers active on our site',
+      icon: <FaTruck />,
+      value: 'FREE DELIEVERY',
+      description: 'Free delievery over PKR 20K',
     },
-    
-  
 
-    // {
-    //   icon:<FaSellsy />,
-    //   value: '33k',
-    //   description: 'Monthly Product Sale',
-    // },
-    // {
-    //   icon: <FaSellsy />,
-    //   value: '45.5k',
-    //   description: 'Customers active on our site',
-    // },
-    // {
-    //   icon: <FaSellsy />,
-    //   value: '25k',
-    //   description: 'Annual gross sale on our site',
-    // },
+    {
+      icon: <AiFillCustomerService />,
+      value: '24/7 CUSTOMER SERVICE',
+      description: 'Friendly 24/7 customer support',
+    },
+
+    {
+      icon: <MdOutlinePhoneIphone />,
+      value: 'PREMIUM QUALITY',
+      description: 'Durability handmade ceramic products',
+    },
   ];
+
+  const Category = [
+    {
+      icon: <MdHighQuality />,
+      value: 'PREMIUM QUALITY',
+      description: 'Durability handmade ceramic products',
+    },
+  ]
   return (
     <>
       <main className="">
         <div className="flex">
-          <nav className="hidden lg:flex space-y=-1 lg:flex-col w-1/3 px-20">
+          <nav className="hidden lg:flex space-y-1 lg:flex-col w-1/3 px-20">
             <Link
               href="/"
               className="text-gray-700  font-semibold hover:text-red-500 transition duration-200"
@@ -144,9 +149,10 @@ const Page = () => {
         </div>
       </main>
 
-      <div className="p-6">
+      <div className="flex flex-col   justify-center p-6">
       <h1 className="text-center text-2xl font-bold mb-6">Our Statistics</h1>
       <TestimonialCard data={testimonialData} />
+      <TestimonialCard data={Category} />
       </div>
       
     </>
