@@ -12,6 +12,7 @@ import { GiCrystalEarrings, GiApothecary } from "react-icons/gi";
 const Page = () => {
   const testimonialData = [
     {
+ 
       icon: <FaSellsy />,
       value: '10.5k',
       description: 'Sellers active on our site',
