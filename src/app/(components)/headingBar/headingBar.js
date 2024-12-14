@@ -1,13 +1,16 @@
 // components/Carousel.js
 import React, { useEffect } from "react";
 
-const HeadingBar = ({title}) => {
+const HeadingBar = ({ title, heading }) => {
   return (
     <>
-      <p className="pl-11">
-        <div className="w-3 h-4 bg-red-600 inline-block"></div>
-        {title}
-        </p>
+      <div className="gap-4 flex flex-col">
+        <div className="gap-3 flex items-center">
+          <div className="w-4 h-8 bg-[#DB4444] inline-block rounded-sm"></div>
+          <p className="text-[#DB4444] font-bold">{title}</p>
+        </div>
+        <h2 className="text-4xl font-semibold tracking-wide">{heading}</h2>
+      </div>
     </>
   );
 };
