@@ -1,40 +1,19 @@
-// "use client"; // Required for client-side rendering in Next.js
-// import React from 'react';
-// import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
-// import { Carousel } from 'react-responsive-carousel';
-
-// export default function Page() {
-//     return (
-//         <>
-//             <div id="app">
-//                 <div className="swiper swiper-shutters swiper-initialized swiper-horizontal swiper-watch-progress">
-//                     <div className="swiper-wrapper" style="transform: translate3d(-1310px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;">
-//                         <div className="swiper-slide" style="width: 655px;">
-//                             <img className="swiper-shutters-image" src="./images/1.jpg" style="width: 655px; height: 593px;" />
-//                             <div className="swiper-shutters-image-clones"><div className="swiper-shutters-image-clone" data-swiper-parallax="10%" style="width: 20%; left: 0%; transform: translate3d(10%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/1.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: 0%; transform: translate3d(10%, 0px, 0px); transition-duration: 0ms;" /></div><div className="swiper-shutters-image-clone" data-swiper-parallax="-40%" style="width: 20%; left: 20%; transform: translate3d(-40%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/1.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: -100%; transform: translate3d(10%, 0px, 0px); transition-duration: 0ms;" /></div><div className="swiper-shutters-image-clone" data-swiper-parallax="30%" style="width: 20%; left: 40%; transform: translate3d(30%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/1.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: -200%; transform: translate3d(10%, 0px, 0px); transition-duration: 0ms;" /></div><div className="swiper-shutters-image-clone" data-swiper-parallax="-80%" style="width: 20%; left: 60%; transform: translate3d(-80%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/1.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: -300%; transform: translate3d(10%, 0px, 0px); transition-duration: 0ms;"/></div><div className="swiper-shutters-image-clone" data-swiper-parallax="50%" style="width: 20%; left: 80%; transform: translate3d(50%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/1.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: -400%; transform: translate3d(10%, 0px, 0px); transition-duration: 0ms;"/></div></div><div className="demo-slide-title" data-swiper-parallax="50%" style="transform: translate3d(50%, 0px, 0px); transition-duration: 0ms;">Tiffany</div>
-//                         </div>
-//                         <div className="swiper-slide swiper-slide-prev" style="width: 655px;">
-//                             <img className="swiper-shutters-image" src="./images/2.jpg" style="width: 655px; height: 593px;"/>
-//                                 <div className="swiper-shutters-image-clones"><div className="swiper-shutters-image-clone" data-swiper-parallax="10%" style="width: 20%; left: 0%; transform: translate3d(10%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/2.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: 0%; transform: translate3d(10%, 0px, 0px); transition-duration: 0ms;"/></div><div className="swiper-shutters-image-clone" data-swiper-parallax="-40%" style="width: 20%; left: 20%; transform: translate3d(-40%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/2.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: -100%; transform: translate3d(10%, 0px, 0px); transition-duration: 0ms;"/></div><div className="swiper-shutters-image-clone" data-swiper-parallax="30%" style="width: 20%; left: 40%; transform: translate3d(30%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/2.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: -200%; transform: translate3d(10%, 0px, 0px); transition-duration: 0ms;"/></div><div className="swiper-shutters-image-clone" data-swiper-parallax="-80%" style="width: 20%; left: 60%; transform: translate3d(-80%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/2.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: -300%; transform: translate3d(10%, 0px, 0px); transition-duration: 0ms;"/></div><div className="swiper-shutters-image-clone" data-swiper-parallax="50%" style="width: 20%; left: 80%; transform: translate3d(50%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/2.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: -400%; transform: translate3d(10%, 0px, 0px); transition-duration: 0ms;"/></div></div><div className="demo-slide-title" data-swiper-parallax="50%" style="transform: translate3d(50%, 0px, 0px); transition-duration: 0ms;">Michele</div>
-//                         </div>
-//                         <div className="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" style="width: 655px;">
-//                             <img className="swiper-shutters-image" src="./images/3.jpg" style="width: 655px; height: 593px;"/>
-//                                 <div className="swiper-shutters-image-clones"><div className="swiper-shutters-image-clone" data-swiper-parallax="10%" style="width: 20%; left: 0%; transform: translate3d(0%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/3.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: 0%; transform: translate3d(0%, 0px, 0px); transition-duration: 0ms;"/></div><div className="swiper-shutters-image-clone" data-swiper-parallax="-40%" style="width: 20%; left: 20%; transform: translate3d(0%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/3.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: -100%; transform: translate3d(0%, 0px, 0px); transition-duration: 0ms;"/></div><div className="swiper-shutters-image-clone" data-swiper-parallax="30%" style="width: 20%; left: 40%; transform: translate3d(0%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/3.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: -200%; transform: translate3d(0%, 0px, 0px); transition-duration: 0ms;"/></div><div className="swiper-shutters-image-clone" data-swiper-parallax="-80%" style="width: 20%; left: 60%; transform: translate3d(0%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/3.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: -300%; transform: translate3d(0%, 0px, 0px); transition-duration: 0ms;"/></div><div className="swiper-shutters-image-clone" data-swiper-parallax="50%" style="width: 20%; left: 80%; transform: translate3d(0%, 0px, 0px); transition-duration: 0ms;"><img className="swiper-shutters-image" src="./images/3.jpg" data-swiper-parallax="10%" style="width: 655px; height: 593px; left: -400%; transform: translate3d(0%, 0px, 0px); transition-duration: 0ms;"/></div></div><div className="demo-slide-title" data-swiper-parallax="50%" style="transform: translate3d(0%, 0px, 0px); transition-duration: 0ms;">Jane</div>
-//                         </div>
-//                     </div>
-
-//                     <div className="swiper-button-prev"></div>
-//                     <div className="swiper-button-next swiper-button-disabled"></div>
-//                     <div className="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span className="swiper-pagination-bullet"></span><span className="swiper-pagination-bullet"></span><span className="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
-//                 </div>
-
-//             </div>
-
-//             <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8f1c838f0ed1fd8d&quot;,&quot;version&quot;:&quot;2024.10.5&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;e4f5eab3e2c7422bae5a07554f8e0b5d&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
-
-
-
-//             <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb"><section id="shadow-host-companion"></section></div>
-//         </>
-//     );
-// }
+import React from 'react';
+export default function Page() {
+    return (
+        <div style={{ width: '600px', margin: '0 auto', height:'400px' }}>
+            <Carousel>
+                <div>
+                    <img src="https://preview.redd.it/haeyjbjnb9541.jpg?auto=webp&s=9167de3259cd3d1bc25a02d3e5e9c67af7840277" alt="Slide 1" />
+                </div>
+                <div>
+                    <img src="https://img.freepik.com/free-vector/gradient-abstract-background-with-different-shapes_23-2149110297.jpg" alt="Slide 2" />
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxNkAgg5E8TZuRMFVSnvbfF1jcRYacTxm1Mw&s" alt="Slide 3" />
+                </div>
+            </Carousel>
+        </div>
+    );
+}
+ 

@@ -1,6 +1,8 @@
 // components/Carousel.js
 import React, { useEffect } from "react";
-
+function tine() {
+  document.querySelector('.nav-btn').style.color = "green";
+}
 const HeadingBar = ({ title, heading }) => {
   return (
     <>

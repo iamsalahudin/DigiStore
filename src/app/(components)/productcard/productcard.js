@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import ImgData from '/public/images/bowl_set_a101.jpg';
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="min-w-xs bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 relative m-3">
+    <div className="min-w-[250px] bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300 relative">
       <div className="relative">
         <div className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
           -{(product.Discount/product.Price)*100}%
