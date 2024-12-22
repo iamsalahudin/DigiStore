@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import pik from "/public/images/logo.jpg"
 import Link from 'next/link';
+import ProductCarousel from '../Carousel/ProductCarousel';
 
 export default function Header() {
   return (
@@ -60,8 +61,6 @@ export default function Header() {
          
         </div>
       </div>
-
-   
     </header>
   );
 }
