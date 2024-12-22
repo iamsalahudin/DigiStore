@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Carousel from "./(components)/Carousel/carousel";
+// import Carousel from "./(components)/Carousel/carousel";
 import HeadingBar from "./(components)/headingBar/headingBar.js";
 import Link from "next/link";
 import Products from "./productdetails/productsData.json"
@@ -170,21 +170,21 @@ return (
             </p>
           </Link>
         </nav>
-        <div className="lg:w-2/3 w-full">
+        {/* <div className="lg:w-2/3 w-full">
           <Carousel />
-        </div>
+        </div> */}
       </div>
       <HeadingBar title="Featured Products" heading="Most Popular" />
       <div className="flex items-center overflow-hidden my-5 gap-2">
         <button className="nav-btn absolute z-10 left-3" onclick={translateX}>
-          <i class="fa-solid fa-arrow-left bg-gray-200 p-3 rounded-full"></i>
+          <i className="fa-solid fa-arrow-left bg-gray-200 p-3 rounded-full"></i>
         </button>
         <button className="nav-btn absolute z-10 right-3">
-          <i class="fa-solid fa-arrow-right bg-gray-200 p-3 rounded-full"></i>
+          <i className="fa-solid fa-arrow-right bg-gray-200 p-3 rounded-full"></i>
         </button>
         <div className="flex min-w-[10000px]" id="productBlock">
           {Products.map((product) => (
-            <Productcard key={product.ProductID} product={product} />
+            <Productcard key={product.ID} product={product} />
           ))}
         </div>
       </div>
@@ -193,38 +193,38 @@ return (
       </div>
       <HeadingBar title="Categories" heading="Browse By Category" />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-        {Categories.map((data) => (
-          <Card key={Categories.key} data={data} />
+        {Categories.map((data , index) => (
+          <Card key={index} data={data} />
         ))
-        };
+        }
       </div>
       <HeadingBar title="This Month" heading="Best Selling Products" />
       <div className="flex items-center overflow-hidden my-5 gap-2">
         <button className="nav-btn absolute z-10 left-3" onclick={translateX}>
-          <i class="fa-solid fa-arrow-left bg-gray-200 p-3 rounded-full"></i>
+          <i className="fa-solid fa-arrow-left bg-gray-200 p-3 rounded-full"></i>
         </button>
         <button className="nav-btn absolute z-10 right-3">
-          <i class="fa-solid fa-arrow-right bg-gray-200 p-3 rounded-full"></i>
+          <i className="fa-solid fa-arrow-right bg-gray-200 p-3 rounded-full"></i>
         </button>
         <div className="flex min-w-[10000px]" id="productBlock">
           {Products.map((product) => (
-            <Productcard key={product.ProductID} product={product} />
+            <Productcard key={product.ID} product={product} />
           ))}
         </div>
       </div>
       <HeadingBar title="This Month" heading="Best Selling Products" />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {testimonialData.map((data) => (
-          <Card key={testimonialData.key} data={data} />
+        {testimonialData.map((data, index) => (
+          <Card key={index} data={data} />
         ))
-        };
+        }
       </div>
       <HeadingBar title="Featured" heading="New Arrival" />
     </main>
 
 
   </>
-);
-};
+)
+}
 
 export default Page;

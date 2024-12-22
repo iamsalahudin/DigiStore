@@ -1,7 +1,7 @@
 // components/TestimonialCard.js
 import React from 'react';
 
-const Card = ({ data}) => {
+const Card = ({data}) => {
   return (
     <a href={data.link}
       className="flex flex-col items-center p-6 text-center border rounded-lg shadow-md hover:bg-red-500 hover:text-white transition-all duration-300"
