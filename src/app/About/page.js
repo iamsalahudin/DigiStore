@@ -2,18 +2,31 @@ import React from 'react'
 import Image from 'next/image'
 import About from "/public/images/about us.jpg"
 import Card from '../(components)/Testimonial/Testimonial'
-import { FaSellsy } from "react-icons/fa";
-
+import { FcSalesPerformance } from "react-icons/fc";
+import { BsCurrencyDollar } from "react-icons/bs";
+import { FaShoppingBag } from "react-icons/fa";
 const Page = () => {
-   const testimonialData = 
+   const testimonialData = [
       {
-        icon: <FaSellsy />,
+        icon: <FcSalesPerformance />,
         value: '10.5k',
         description: 'Sellers active on our site',
         link: '/',
-      }
-    
-  
+      },
+      {
+        icon: <BsCurrencyDollar />,
+        value: '33k',
+        description: 'Monthly Product Sale',
+        link: '/',
+      },
+      {
+        icon: <FaShoppingBag />,
+        value: '45.5k',
+        description: 'Customers active on our site',
+        link: '/',
+      },
+    ];
+   
   return (
     <>
     <div className="container flex">
@@ -28,7 +41,7 @@ const Page = () => {
     </div>
 
     <div className="testimonial">
-      <Card data={testimonialData}/>
+      <Card/>
     </div>
     </>
 
