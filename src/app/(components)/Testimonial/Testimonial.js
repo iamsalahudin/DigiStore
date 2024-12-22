@@ -10,7 +10,7 @@ const Card = ({ data}) => {
       <h3 className="text-xl font-bold">{data.value}</h3>
       <p className="text-sm">{data.description}</p>
     </a>
-  );
+  )
 };
 
 

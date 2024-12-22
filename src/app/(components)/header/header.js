@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50 w-full">
+    <header className="bg-white border-b-[1px] border-gray-300 sticky top-0 z-50 w-full">
       <div className="container mx-auto flex items-center justify-between py-1 px-4 lg:px-8">
         {/* Left Section: Logo */}
         <div className="flex items-center space-x-4">
