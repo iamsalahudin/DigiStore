@@ -1,7 +1,4 @@
-"use client"; // Required for client-side rendering in Next.js
 import React from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
-import { Carousel } from 'react-responsive-carousel';
 
 export default function Page() {
     return (
