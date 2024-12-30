@@ -10,12 +10,14 @@ import Card from "./(components)/Testimonial/Testimonial";
 import { FaRing, FaSellsy } from "react-icons/fa";
 import { GiCrystalEarrings, GiApothecary, GiDominoTiles } from "react-icons/gi";
 import { BiSolidDish } from "react-icons/bi";
+// import image from "../../public/images/decor_1001.png"
 
 
 const Page = () => {
 
   const testimonialData = [
     {
+ 
       icon: <FaSellsy />,
       value: '10.5k',
       description: 'Sellers active on our site',
@@ -72,7 +74,6 @@ const Page = () => {
       link: '/',
     },
   ]
-
   return (
     <>
       <main className="mx-32">
