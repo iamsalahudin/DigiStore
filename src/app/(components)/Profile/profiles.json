@@ -1,0 +1,34 @@
+[
+    {
+        "img": "/public/images/hussain.jpg",
+        "name": "Hussain Ahmad",
+        "desig": "Director",
+        "twitter": "FaXTwitter",
+        "instagram": "FaInstagram",
+        "linkedin": "FaLinkedinIn"
+    },
+    {
+        "img": "/public/images/hussain.jpg",
+        "name": "Salahudin Ahmad",
+        "desig": "Manager",
+        "twitter": "FaXTwitter",
+        "instagram": "FaInstagram",
+        "linkedin": "FaLinkedinIn"
+    },
+    {
+        "img": "/public/images/hussain.jpg",
+        "name": "Awais Shafique",
+        "desig": "Lodo",
+        "twitter": "FaXTwitter",
+        "instagram": "FaInstagram",
+        "linkedin": "FaLinkedinIn"
+    },
+    {
+        "img": "/public/images/hussain.jpg",
+        "name": "Hussnain Ahmad",
+        "desig": "Founder",
+        "twitter": "FaXTwitter",
+        "instagram": "FaInstagram",
+        "linkedin": "FaLinkedinIn"
+    }
+]

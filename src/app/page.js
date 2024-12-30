@@ -14,10 +14,8 @@ import { BiSolidDish } from "react-icons/bi";
 
 
 const Page = () => {
-
-  const testimonialData = [
+   const testimonialData = [
     {
- 
       icon: <FaSellsy />,
       value: '10.5k',
       description: 'Sellers active on our site',
