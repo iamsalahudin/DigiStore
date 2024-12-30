@@ -10,7 +10,6 @@ import Card from "./(components)/Testimonial/Testimonial";
 import { FaRing, FaSellsy } from "react-icons/fa";
 import { GiCrystalEarrings, GiApothecary, GiDominoTiles } from "react-icons/gi";
 import { BiSolidDish } from "react-icons/bi";
-// import image from "../../public/images/decor_1001.png"
 
 
 const Page = () => {
@@ -190,25 +189,22 @@ const Page = () => {
         <ProductsCarousel title="This Month" heading="Best Selling Products" Products={Products} carouselId="PC2" />
         <div className="border-b-2 border-gray-200 mt-6 mb-20" ></div>
         <ProductsCarousel title="Our Products" heading="Explore Our Products" Products={Products} carouselId="PC3" />
-
         <HeadingBar title="Featured" heading="New Arrival" />
         <div className="grid gap-5 grid-cols-4 min-h-[80vh] my-10">
           <div className="text-black bg-black text-center rounded-md row-span-2 col-span-2 p-6 opacity-80 flex items-end" style={{ backgroundImage: 'url(https://trinitycrafts.in/wp-content/uploads/2024/09/ceramics-4.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <CardText/>
+            <CardText />
           </div>
           <div className="text-black bg-black text-center rounded-md col-span-2 p-6 opacity-80 flex items-end" style={{ backgroundImage: 'url(https://cdn.shopify.com/s/files/1/0675/7541/files/ceramic-vases.jpg?v=1690232490)', backgroundSize: 'cover', backgroundPosition: 'center', }}>
-          <CardText/>
+            <CardText />
           </div>
           <div className="text-black bg-black text-center rounded-md p-6 opacity-80 flex items-end" style={{ backgroundImage: 'url(https://www.sushisushi.co.uk/cdn/shop/articles/Japanese-Ceramics_5fee6f50-af3e-4991-9b08-0531f67ab4d1.jpg?v=1642086410)', backgroundSize: 'cover', backgroundPosition: 'center', }}>
-          <CardText/>
+            <CardText />
           </div>
           <div className="text-black bg-black text-center rounded-md p-6 opacity-80 flex items-end" style={{ backgroundImage: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_8fxju7AqwQwKWReGXnP4DW1nyIY7OX9fJQ&s)', backgroundSize: 'cover', backgroundPosition: 'center', }}>
-          <CardText/>
+            <CardText />
           </div>
         </div>
       </main >
-
-
     </>
   );
 };

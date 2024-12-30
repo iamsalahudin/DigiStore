@@ -22,7 +22,7 @@ export default function Header() {
           <Link href="/contact" className="text-gray-700 font-semibold hover:text-red-500 transition duration-200">
             Contact
           </Link>
-          <Link href="/about" className="text-gray-700 font-semibold hover:text-red-500 transition duration-200">
+          <Link href="/About" className="text-gray-700 font-semibold hover:text-red-500 transition duration-200">
             About
           </Link>
           <Link href="/signup" className="text-gray-700 font-semibold hover:text-red-500 transition duration-200">
@@ -53,9 +53,12 @@ export default function Header() {
              <input className='bg-transparent outline-none  text-black ' type="text" placeholder='Search...' />
             <i className="fa-solid fa-magnifying-glass"></i>
            </div>
-            <i className="fa-brands fa-opencart"></i>
+
+            <Link href="/cart">
+            <i className="fa-brands fa-opencart"></i></Link>
             <i className="fa-regular fa-user"></i>
-            <i className="fa-regular fa-heart"></i>
+            <Link href="/Wishlist">
+            <i className="fa-regular fa-heart"></i></Link>
           </div>
          
         </div>

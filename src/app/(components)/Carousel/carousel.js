@@ -1,8 +1,11 @@
+"use client"; // Required for client-side rendering in Next.js
 import React from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
+import { Carousel } from 'react-responsive-carousel';
 
 export default function Page() {
     return (
-        <div style={{ width: '600px', margin: '0 auto', height:'400px' }}>
+        <div style={{ width: '600px', margin: 'auto', height:'400px' }}>
             <Carousel>
                 <div>
                     <img src="https://preview.redd.it/haeyjbjnb9541.jpg?auto=webp&s=9167de3259cd3d1bc25a02d3e5e9c67af7840277" alt="Slide 1" />

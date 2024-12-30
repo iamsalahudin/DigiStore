@@ -1,17 +1,30 @@
+"use client";
 import Image from 'next/image';
+// import { useState } from "react";
+
 
 const ProductCard = ({ product }) => {
+  // const [isFavorite, setIsFavorite] = useState(false);
+
+  // if(product.favourite){
+  //   setIsFavorite(true);
+  // }
+  // const toggleFavorite = () => {
+  //   setIsFavorite(!isFavorite);
+  // };
   return (
     <div className="min-w-[250px] bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-md transition-shadow duration-300 relative">
       <div className="relative">
         <div className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full">
-          -{(product.Discount/product.Price)*100}%
+          -{(product.Discount / product.Price) * 100}%
         </div>
 
 
         <div className="absolute top-2 right-2 flex space-x-2">
-          <button className="bg-gray-100 p-2 rounded-full shadow-md hover:bg-gray-200">
-            <i className="fa-regular fa-heart"></i>
+          <button
+            className={`bg-gray-100 p-2 rounded-full shadow-md hover:bg-gray-200 ${product.favourite ? "text-red-500" : "text-black"}`}
+          >
+            <i className="fa-solid fa-heart"></i>
           </button>
 
           <button className="bg-gray-100 p-2 rounded-full shadow-md hover:bg-gray-200">
