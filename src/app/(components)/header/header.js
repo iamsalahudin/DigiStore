@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import pik from "/public/images/logo.jpg"
 import Link from 'next/link';
-import ProductCarousel from '../Carousel/ProductCarousel';
 
 export default function Header() {
   return (
@@ -28,6 +27,9 @@ export default function Header() {
           </Link>
           <Link href="/signup" className="text-gray-700 font-semibold hover:text-red-500 transition duration-200">
             Sign Up
+          </Link>
+          <Link href="/login" className="text-gray-700 font-semibold hover:text-red-500 transition duration-200">
+            Login
           </Link>
         </nav>
 

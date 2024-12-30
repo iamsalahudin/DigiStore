@@ -2,19 +2,26 @@
 "use client"
 import React from 'react'
 import img from "/public/images/dinner_set_a601.jpg"
-import Image from 'next/image'
+// import Image from 'next/image'
+// import { URL } from 'next/dist/compiled/@edge-runtime/primitives/url'
 
 const Login = () => {
   const handleform = (formData) => {
     const formInputData = Object.fromEntries(formData.entries());
     console.log(formInputData);   
   };
+  // console.log(img.src);
+  
   return (
     <>
       <div className="container overflow-hidden h-[80vh] flex items-center justify-center md:gap-1 ">
-        <div className="left hidden  md:block w-1/2" id='notu'>
-          <Image src={img} alt="logo" width="100%" />
-        </div>
+      <div 
+  className="left hidden md:block min-h-full w-1/2" 
+  id="notu" 
+  style={{ backgroundImage: `url(${img.src})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
+      </div>
+
+
         <div className="right pb-10 md:w-1/2">
           <form action={handleform} className='flex flex-col items-center space-y-4'>
            <div className='flex flex-col items-center m-6'>
