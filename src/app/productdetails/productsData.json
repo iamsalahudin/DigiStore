@@ -6,7 +6,8 @@
     "Discount": 200,
     "Desp": "Bowls just designed for you",
     "Category": "crockery",
-    "Images": ["/images/bowl_set_a101.jpg"]
+    "Images": ["/images/bowl_set_a101.jpg"],
+    "favourite": true
   },
   {
     "ID": 2,
@@ -15,7 +16,8 @@
     "Discount": 200,
     "Desp": "Bracelet just designed for you",
     "Category": "crockery",
-    "Images": ["/images/bracelet_a101.jpg"]
+    "Images": ["/images/bracelet_a101.jpg"],
+    "favourite": true
   },
   {
     "ID": 3,
@@ -24,7 +26,8 @@
     "Discount": 200,
     "Desp": "Decoration Flower Pot just designed for you",
     "Category": "decor",
-    "Images": ["/images/decor_a101.jpg"]
+    "Images": ["/images/decor_a101.jpg"],
+    "favourite": true
   },
   {
     "ID": 4,
@@ -33,7 +36,8 @@
     "Discount": 200,
     "Desp": "Decoration Hanging Piece just designed for you",
     "Category": "decor",
-    "Images": ["/images/decor_b101.jpg"]
+    "Images": ["/images/decor_b101.jpg"],
+    "favourite": false
   },
   {
     "ID": 5,
@@ -42,7 +46,8 @@
     "Discount": 200,
     "Desp": "Decoration Hanging Piece just designed for you",
     "Category": "decor",
-    "Images": ["/images/decor_b201.jpg"]
+    "Images": ["/images/decor_b201.jpg"],
+    "favourite": false
   },
   {
     "ID": 6,
@@ -51,7 +56,8 @@
     "Discount": 200,
     "Desp": "Decoration Hanging Piece just designed for you",
     "Category": "decor",
-    "Images": ["/images/decor_b301.jpg"]
+    "Images": ["/images/decor_b301.jpg"],
+    "favourite": true
   },
   {
     "ID": 7,
@@ -60,7 +66,8 @@
     "Discount": 200,
     "Desp": "Decoration Lamp just designed for you",
     "Category": "decor",
-    "Images": ["/images/decor_lamp_a101.jpg"]
+    "Images": ["/images/decor_lamp_a101.jpg"],
+    "favourite": false
   },
   {
     "ID": 8,
@@ -69,7 +76,8 @@
     "Discount": 200,
     "Desp": "Decoration Mirror just designed for you",
     "Category": "decor",
-    "Images": ["/images/decor_mirror_a101.jpg"]
+    "Images": ["/images/decor_mirror_a101.jpg"],
+    "favourite": true
   },
   {
     "ID": 9,
@@ -78,7 +86,8 @@
     "Discount": 200,
     "Desp": "Decoration Stool just designed for you",
     "Category": "decor",
-    "Images": ["/images/decor_stool_a101.jpg"]
+    "Images": ["/images/decor_stool_a101.jpg"],
+    "favourite": false
   },
   {
     "ID": 10,
@@ -87,7 +96,8 @@
     "Discount": 200,
     "Desp": "Decoration Texture Tiles Scenery just designed for you",
     "Category": "decor",
-    "Images": ["/images/decor_texture_tiles_a101.jpg"]
+    "Images": ["/images/decor_texture_tiles_a101.jpg"],
+    "favourite": false
   },
   {
     "ID": 11,
@@ -96,7 +106,8 @@
     "Discount": 200,
     "Desp": "Decoration Texture Tiles Scenery just designed for you",
     "Category": "decor",
-    "Images": ["/images/decor_texture_tiles_a201.jpg"]
+    "Images": ["/images/decor_texture_tiles_a201.jpg"],
+    "favourite": true
   }
 ]
 
