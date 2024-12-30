@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import HeadingBar from "../headingBar/headingBar";
 import Productcard from "../productcard/productcard";
