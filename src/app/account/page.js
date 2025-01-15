@@ -4,7 +4,6 @@ import { useState } from "react";
 export default function ManageAccount() {
   const [activeSection, setActiveSection] = useState("My Profile");
 
-  // Profile State
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -23,7 +22,6 @@ export default function ManageAccount() {
   const handleProfileSubmit = (e) => {
     e.preventDefault();
     console.log("Profile Updated:", formData);
-    // Clear the input fields after submit
     setFormData({
       firstName: "",
       lastName: "",
@@ -35,7 +33,6 @@ export default function ManageAccount() {
     });
   };
 
-  // Address State
   const [addressData, setAddressData] = useState({
     street: "",
     city: "",
@@ -52,7 +49,6 @@ export default function ManageAccount() {
   const handleAddressSubmit = (e) => {
     e.preventDefault();
     console.log("Address Submitted:", addressData);
-    // Clear the input fields after submit
     setAddressData({
       street: "",
       city: "",
@@ -62,7 +58,6 @@ export default function ManageAccount() {
     });
   };
 
-  // Payment State
   const [paymentData, setPaymentData] = useState({
     cardholderName: "",
     cardNumber: "",
@@ -89,7 +84,6 @@ export default function ManageAccount() {
 
   return (
     <div className="container mx-auto p-4 flex flex-col lg:flex-row items-start min-h-screen lg:h-[700px]">
-      {/* Sidebar */}
       <aside className="w-full lg:w-1/4 p-4 bg-gray-100 rounded shadow-md mb-4 lg:mb-0">
         <h2 className="text-lg font-bold mb-4">Manage My Account</h2>
         <ul className="space-y-2">
@@ -132,7 +126,7 @@ export default function ManageAccount() {
         </ul>
       </aside>
 
-      {/* Main Content */}
+
       <main className="w-full lg:w-3/4 p-4 bg-white shadow-md rounded flex flex-col justify-between lg:h-screen">
         {activeSection === "My Profile" && (
           <div>
