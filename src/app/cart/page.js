@@ -4,7 +4,6 @@ import Link from 'next/link';
 import productData from '../productdetails/productsData.json';
 import CartItem from '../(components)/cart/cartitem';
 
-
 const cartItems = [1, 2, 4, 9, 11, 10];
 const page = () => {
     const cartProducts = productData.filter(item => cartItems.includes(item.ID));
@@ -18,13 +17,7 @@ const page = () => {
         }, 0);
         setGrandTotal(newGrandTotal);
         console.log(newGrandTotal);
-        
     };
-
-
-    // useEffect(() => {
-    //     calculateGrandTotal();
-    // }, [quantities]);
     return (
         <div className='md:py-20 py-5 lg:px-32 md:px-14 px-3'>
             <div className='md:pb-10 pb-2'><Link href="/" className='text-gray-500 hover:text-[#DB4444]'>Home</Link> | <Link href="/cart" className='hover:text-[#DB4444]'>Cart</Link></div>

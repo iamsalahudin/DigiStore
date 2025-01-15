@@ -1,7 +1,7 @@
 [
   {
     "ID": 1,
-    "Name": "Bowl Set 1",
+    "Name": "Bowl Set",
     "Price": 1000,
     "Discount": 200,
     "Desp": "Bowls just designed for you",
@@ -11,7 +11,7 @@
   },
   {
     "ID": 2,
-    "Name": "Bracelet 1",
+    "Name": "Bracelet",
     "Price": 1000,
     "Discount": 200,
     "Desp": "Bracelet just designed for you",
@@ -31,7 +31,7 @@
   },
   {
     "ID": 4,
-    "Name": "Decoration Hanging Piece 1",
+    "Name": "Decoration Hanging Piece",
     "Price": 1000,
     "Discount": 200,
     "Desp": "Decoration Hanging Piece just designed for you",
@@ -41,7 +41,7 @@
   },
   {
     "ID": 5,
-    "Name": "Decoration Hanging Piece 2",
+    "Name": "Decoration Hanging Piece",
     "Price": 1000,
     "Discount": 200,
     "Desp": "Decoration Hanging Piece just designed for you",
@@ -51,7 +51,7 @@
   },
   {
     "ID": 6,
-    "Name": "Decoration Hanging Piece 2",
+    "Name": "Decoration Hanging Piece",
     "Price": 1000,
     "Discount": 200,
     "Desp": "Decoration Hanging Piece just designed for you",
