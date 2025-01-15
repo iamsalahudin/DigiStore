@@ -1,6 +1,8 @@
 "use client"
 import Image from 'next/image'
-import pik from "/public/images/logo.jpg"
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+import pik from "/public/images/logo.png"
 import Link from 'next/link';
 import { SlMenu } from "react-icons/sl";
 import { RiCloseLargeLine } from "react-icons/ri";
@@ -15,6 +17,15 @@ export default function Header() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  const [query, setQuery] = useState('');
+  const router = useRouter();
+  const handleFormChange = (e) => {
+    setQuery(e.target.value);
+  };
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    router.push(`/search?q=${encodeURIComponent(query)}`);
+    console.log(query);
   };
 
   return (
@@ -25,7 +36,7 @@ export default function Header() {
           <Image
             src={pik}// Replace with the actual logo path
             alt="Bata Logo"
-            className="w-32 lg:w-32 lg:h-24"
+            className="w-40 lg:w-32 lg:h-24"
           />
         </div>
         {/* Center Section: Navigation */}
@@ -96,16 +107,14 @@ export default function Header() {
         </ul>
       </div>
     </div>
-
-          <div className="input hidden space-x-5 lg:flex items-center">
-            <div className=' border-2 border-b-yellow-400 border-transparent p-1 '>
-              <input className='bg-transparent outline-none  text-black ' type="text" placeholder='Search...' />
-              <i className="fa-solid fa-magnifying-glass"></i>
-            </div>
-
+          <div className="input hidden  space-x-5 lg:flex items-center">
+            <form className=' border-2 border-b-red-500 border-transparent p-1 ' onSubmit={handleFormSubmit}>
+              <input className='bg-transparent outline-none  text-black ' type="text" placeholder='Search...' value={query} onChange={handleFormChange} />
+              <button type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
+            </form>
             <Link href="/cart">
               <i className="fa-brands fa-opencart"></i></Link>
-            <Link href="/account"><i className="fa-regular fa-user"></i></Link>
+            <i className="fa-regular fa-user"></i>
             <Link href="/Wishlist">
               <i className="fa-regular fa-heart"></i></Link>
           </div>
