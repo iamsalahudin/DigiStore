@@ -3,30 +3,63 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import productData from '../productdetails/productsData.json';
 import CartItem from '../(components)/cart/cartitem';
+import { useRef } from 'react';
 
 
 const cartItems = [1, 2, 4, 9, 11, 10];
+
 const page = () => {
+    const [data , setData] = useState(1)
+    if (!data){
+        return <div>Loading...</div>
+    }
+    const containerRef = useRef(null);
     const cartProducts = productData.filter(item => cartItems.includes(item.ID));
     const [GrandTotal, setGrandTotal] = useState(0);
+    
+    const handlData = (childData) => {
+        setData(childData)
+    }
 
-    const calculateGrandTotal = () => {
-        const totalDivs = containerRef.current.querySelectorAll('.total');
-        const newGrandTotal = Array.from(totalDivs).reduce((sum, div) => {
-            const total = parseFloat(div.dataset.total) || 0; // Read data-total value
-            return sum + total;
-        }, 0);
-        setGrandTotal(newGrandTotal);
-        console.log(newGrandTotal);
+    // const calculateGrandTotal = () => {
+       
         
+    // };
+    const calculateGrandTotal = () => {
+        if (containerRef.current) {  // Check if containerRef is valid
+            const totalDivs = containerRef.current.querySelectorAll('.totals-cart');
+            const newGrandTotal = Array.from(totalDivs).reduce((sum, div) => {
+                const total = parseFloat(div.dataset.total) || 0; // Read data-total value
+                return sum + total;
+            }, 0);
+            setGrandTotal(newGrandTotal);
+            console.log(newGrandTotal);
+        } else {
+            console.log("containerRef is null or not attached yet.");
+        }
     };
+    
 
 
     // useEffect(() => {
-    //     calculateGrandTotal();
-    // }, [quantities]);
+    //     const totalDivs = containerRef.current.querySelectorAll('.totals-cart');
+    //     const newGrandTotal = Array.from(totalDivs).reduce((sum, div) => {
+    //         const total = parseFloat(div.dataset.total) || 0; // Read data-total value
+    //         return sum + total;
+    //     }, 0);
+    //     setGrandTotal(newGrandTotal);
+    //     console.log(newGrandTotal);
+    // }, [data]);
+
+    useEffect(() => {
+        // Use a check to ensure DOM is ready
+        if (containerRef.current) {
+            calculateGrandTotal();
+        }
+    }, [cartProducts]); // Recalculate whenever cartProducts changes
+    
     return (
-        <div className='md:py-20 py-5 lg:px-32 md:px-14 px-3'>
+        <div  ref={containerRef} className='md:py-20 py-5 lg:px-32 md:px-14 px-3'>
             <div className='md:pb-10 pb-2'><Link href="/" className='text-gray-500 hover:text-[#DB4444]'>Home</Link> | <Link href="/cart" className='hover:text-[#DB4444]'>Cart</Link></div>
             <div className='w-full'>
                 <div className='font-bold my-2 w-full flex justify-between rounded items-center'>
@@ -37,7 +70,7 @@ const page = () => {
                 </div>
                 {cartProducts.map((product, index) => {
                     return (
-                        <CartItem key={index} product={product} />
+                        <CartItem  key={index} data={handlData} product={product} />
                     )
                 }
                 )}
@@ -53,9 +86,9 @@ const page = () => {
                 </div>
                 <div className="border border-gray-500 p-5 flex flex-col sm:w-2/5">
                     <div className="font-semibold">Cart Total</div>
-                    <div className="flex justify-between border-b border-gray-400 py-4"><p>Subtotal:</p><p>$3000</p></div>
+                    <div className="flex justify-between border-b border-gray-400 py-4"><p>Subtotal:</p><p>{GrandTotal}</p></div>
                     <div className="flex justify-between border-b border-gray-400 py-4"><p>Shipping:</p><p>FREE</p></div>
-                    <div className="flex justify-between py-4"><p>Total:</p><p>$3000</p></div>
+                    <div className="flex justify-between py-4"><p>Total:</p><p>{GrandTotal}</p></div>
                     <button href="/" className="text-lg py-3 px-6 bg-[#DB4444] text-white hover:bg-[#af3838] w-64 mx-auto">Proceed to Checkout</button>
                 </div>
             </div>
@@ -64,3 +97,8 @@ const page = () => {
 }
 
 export default page
+
+ 
+
+
+ 
