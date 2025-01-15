@@ -5,6 +5,8 @@ import productData from '../productdetails/productsData.json';
 import CartItem from '../(components)/cart/cartitem';
 
 const cartItems = [1, 2, 4, 9, 11, 10];
+
+
 const page = () => {
     const cartProducts = productData.filter(item => cartItems.includes(item.ID));
     const [GrandTotal, setGrandTotal] = useState(0);
