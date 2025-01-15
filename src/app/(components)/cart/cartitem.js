@@ -9,7 +9,7 @@ const cartitem = ({product}) => {
 
     const handleQuantityChange = (e) => {
         const value = parseInt(e.target.value, 10); // Parse the input as an integer
-        setQuantity(isNaN(value) ? 0 : value); // Ensure it's a valid number or default to 0
+        setQuantity(isNaN(value) ? 1 : value); // Ensure it's a valid number or default to 0
     };
     return (
         <div className='border border-gray-300 my-2 w-full flex justify-between items-center rounded'>
