@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image'
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
 import pik from "/public/images/logo.png"
 import Link from 'next/link';
 import { SlMenu } from "react-icons/sl";
@@ -10,6 +9,8 @@ import { useEffect, useState } from 'react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [query, setQuery] = useState('');
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,11 +18,12 @@ export default function Header() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
-  const [query, setQuery] = useState('');
-  const router = useRouter();
+  };
+
   const handleFormChange = (e) => {
     setQuery(e.target.value);
   };
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     router.push(`/search?q=${encodeURIComponent(query)}`);
@@ -60,53 +62,49 @@ export default function Header() {
 
         <div className="flex items-center space-x-4 cursor-pointer">
 
-        <div>
-      <button onClick={toggleMenu} className="p-2 lg:hidden text-white bg-blue-600">
-        <SlMenu />
-      </button>
+          <div>
+            <button onClick={toggleMenu} className="p-2 lg:hidden text-white bg-blue-600">
+              <SlMenu />
+            </button>
 
-      <div
-        className={`fixed inset-y-0 left-0 w-64 bg-red-600 transform ${
-          isMenuOpen ? 'translate-x-0' : '-translate-x-full'
-        } transition-transform duration-300`}
-      >
-        <button
-          onClick={toggleMenu}
-          className="absolute top-4 right-4 text-white"
-        >
-          Close
-        </button>
-        <ul className="p-4 text-white">
-          <li className="py-2">
-            <Link
-              href="/"
-              onClick={closeMenu}
-              className="text-white hover:text-gray-300 transition duration-200"
-            >
-              Home
-            </Link>
-          </li>
-          <li className="py-2">
-            <Link
-              href="/contact"
-              onClick={closeMenu}
-              className="text-white hover:text-gray-300 transition duration-200"
-            >
-              Contact
-            </Link>
-          </li>
-          <li className="py-2">
-            <Link
-              href="/about"
-              onClick={closeMenu}
-              className="text-white hover:text-gray-300 transition duration-200"
-            >
-              About
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </div>
+            <div className={`fixed inset-y-0 left-0 w-64 bg-red-600 transform ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300`}>
+              <button
+                onClick={toggleMenu}
+                className="absolute top-4 right-4 text-white"
+              >
+                Close
+              </button>
+              <ul className="p-4 text-white">
+                <li className="py-2">
+                  <Link
+                    href="/"
+                    onClick={closeMenu}
+                    className="text-white hover:text-gray-300 transition duration-200"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li className="py-2">
+                  <Link
+                    href="/contact"
+                    onClick={closeMenu}
+                    className="text-white hover:text-gray-300 transition duration-200"
+                  >
+                    Contact
+                  </Link>
+                </li>
+                <li className="py-2">
+                  <Link
+                    href="/about"
+                    onClick={closeMenu}
+                    className="text-white hover:text-gray-300 transition duration-200"
+                  >
+                    About
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
           <div className="input hidden  space-x-5 lg:flex items-center">
             <form className=' border-2 border-b-red-500 border-transparent p-1 ' onSubmit={handleFormSubmit}>
               <input className='bg-transparent outline-none  text-black ' type="text" placeholder='Search...' value={query} onChange={handleFormChange} />
