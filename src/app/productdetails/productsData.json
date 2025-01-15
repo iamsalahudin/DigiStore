@@ -25,7 +25,7 @@
     "Price": 1000,
     "Discount": 200,
     "Desp": "Decoration Flower Pot just designed for you",
-    "Category": "decor",
+    "Category": "decoration",
     "Images": ["/images/decor_a101.jpg"],
     "favourite": true
   },
@@ -35,7 +35,7 @@
     "Price": 1000,
     "Discount": 200,
     "Desp": "Decoration Hanging Piece just designed for you",
-    "Category": "decor",
+    "Category": "decoration",
     "Images": ["/images/decor_b101.jpg"],
     "favourite": false
   },
@@ -45,7 +45,7 @@
     "Price": 1000,
     "Discount": 200,
     "Desp": "Decoration Hanging Piece just designed for you",
-    "Category": "decor",
+    "Category": "decoration",
     "Images": ["/images/decor_b201.jpg"],
     "favourite": false
   },
@@ -55,7 +55,7 @@
     "Price": 1000,
     "Discount": 200,
     "Desp": "Decoration Hanging Piece just designed for you",
-    "Category": "decor",
+    "Category": "decoration",
     "Images": ["/images/decor_b301.jpg"],
     "favourite": true
   },
@@ -65,7 +65,7 @@
     "Price": 1000,
     "Discount": 200,
     "Desp": "Decoration Lamp just designed for you",
-    "Category": "decor",
+    "Category": "decoration",
     "Images": ["/images/decor_lamp_a101.jpg"],
     "favourite": false
   },
@@ -75,7 +75,7 @@
     "Price": 1000,
     "Discount": 200,
     "Desp": "Decoration Mirror just designed for you",
-    "Category": "decor",
+    "Category": "decoration",
     "Images": ["/images/decor_mirror_a101.jpg"],
     "favourite": true
   },
@@ -85,7 +85,7 @@
     "Price": 1000,
     "Discount": 200,
     "Desp": "Decoration Stool just designed for you",
-    "Category": "decor",
+    "Category": "decoration",
     "Images": ["/images/decor_stool_a101.jpg"],
     "favourite": false
   },
@@ -95,7 +95,7 @@
     "Price": 1000,
     "Discount": 200,
     "Desp": "Decoration Texture Tiles Scenery just designed for you",
-    "Category": "decor",
+    "Category": "decoration",
     "Images": ["/images/decor_texture_tiles_a101.jpg"],
     "favourite": false
   },
@@ -105,7 +105,7 @@
     "Price": 1000,
     "Discount": 200,
     "Desp": "Decoration Texture Tiles Scenery just designed for you",
-    "Category": "decor",
+    "Category": "decoration",
     "Images": ["/images/decor_texture_tiles_a201.jpg"],
     "favourite": true
   }

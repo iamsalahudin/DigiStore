@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import Carousel from "./(components)/Carousel/carousel";
 import HeadingBar from "./(components)/headingBar/headingBar.js";
+import CategoriesNav from "./(components)/categories/categoriesNav";
 import ProductsCarousel from "./(components)/ProductsCarousel/productsCarousel"
 import Link from "next/link";
 import Products from "./productdetails/productsData.json"
@@ -10,7 +11,6 @@ import Card from "./(components)/Testimonial/Testimonial";
 import { FaRing, FaSellsy } from "react-icons/fa";
 import { GiCrystalEarrings, GiApothecary, GiDominoTiles } from "react-icons/gi";
 import { BiSolidDish } from "react-icons/bi";
-// import image from "../../public/images/decor_1001.png"
 
 
 const Page = () => {
@@ -72,109 +72,17 @@ const Page = () => {
       link: '/',
     },
   ]
+
   return (
     <>
       <main className="mx-32">
-        <div className="flex h-[460px] overflow-hidden mb-20">
-          <nav className="hidden lg:flex space-y-3 lg:flex-col w-1/5 pr-5 border-r-[1px] border-gray-300 pt-8">
-            <Link
-              href="/"
-              className="text-gray-700  font-semibold hover:text-red-500 transition duration-200"
-            >
-              <p className="flex justify-between items-center">
-                <span>Decoration</span>
-                <i className="fa-solid fa-chevron-right"></i>
-              </p>
-            </Link>
-            <Link
-              href="/contact"
-              className="text-gray-700 font-semibold hover:text-red-500 transition duration-200"
-            >
-              <p className="flex justify-between items-center">
-                <span>Crockery</span>
-                <i className="fa-solid fa-chevron-right"></i>
-              </p>
-            </Link>
-            <Link
-              href="/about"
-              className="text-gray-700 font-semibold hover:text-red-500 transition duration-200"
-            >
-              <p className="flex justify-between items-center">
-                <span>Jewellery</span>
-                <i className="fa-solid fa-chevron-right"></i>
-              </p>
-            </Link>
-            <Link
-              href="/signup"
-              className="text-gray-700 font-semibold hover:text-red-500 transition duration-200"
-            >
-              <p className="flex justify-between items-center">
-                <span>Tiles & Marbles</span>
-                <i className="fa-solid fa-chevron-right"></i>
-              </p>
-            </Link>
-            <Link
-              href="/signup"
-              className="text-gray-700 font-semibold hover:text-red-500 transition duration-200"
-            >
-              <p>
-                <span>Flower Vase</span>
-              </p>
-            </Link>
-            <Link
-              href="/signup"
-              className="text-gray-700 font-semibold hover:text-red-500 transition duration-200"
-            >
-              <p>
-                <span>Bowls, Cups & Mugs</span>
-              </p>
-            </Link>
-            <Link
-              href="/signup"
-              className="text-gray-700 font-semibold hover:text-red-500 transition duration-200"
-            >
-              <p>
-                <span>Dishes</span>
-              </p>
-            </Link>
-            <Link
-              href="/signup"
-              className="text-gray-700 font-semibold hover:text-red-500 transition duration-200"
-            >
-              <p>
-                <span>Pots</span>
-              </p>
-            </Link>
-            <Link
-              href="/signup"
-              className="text-gray-700 font-semibold hover:text-red-500 transition duration-200"
-            >
-              <p>
-                <span>Astray</span>
-              </p>
-            </Link>
-            <Link
-              href="/signup"
-              className="text-gray-700 font-semibold hover:text-red-500 transition duration-200"
-            >
-              <p>
-                <span>Tea Sets</span>
-              </p>
-            </Link>
-            <Link
-              href="/signup"
-              className="text-gray-700 font-semibold hover:text-red-500 transition duration-200"
-            >
-              <p>
-                <span>Dinner Sets</span>
-              </p>
-            </Link>
-          </nav>
-          <div className="lg:w-4/5 w-full pt-8">
+        <div className="flex h-[530px] mb-20 overflow-hidden">
+          <CategoriesNav/>
+          <div className="lg:w-4/5 w-full">
             <Carousel />
           </div>
         </div>
-        <ProductsCarousel title="Featured Products" heading="Most Popular" Products={Products} carouselId="PC1" />
+        <ProductsCarousel className="mt-20" title="Featured Products" heading="Most Popular" Products={Products} carouselId="PC1" />
         <div className="flex items-center justify-center w-full h-32 border-b-2 border-gray-200 mb-20">
           <a href="" className="py-3 px-10 bg-[#DB4444] text-white">View All Products</a>
         </div>
