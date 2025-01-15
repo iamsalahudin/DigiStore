@@ -1,18 +1,32 @@
+"use client"
 import Image from 'next/image'
-import pik from "/public/images/logo.jpg"
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+import pik from "/public/images/logo.png"
 import Link from 'next/link';
 import ProductCarousel from '../Carousel/ProductCarousel';
 
 export default function Header() {
+  const [query, setQuery] = useState('');
+  const router = useRouter();
+  const handleFormChange = (e) => {
+    setQuery(e.target.value);
+  };
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    router.push(`/search?q=${encodeURIComponent(query)}`);
+    console.log(query);
+  };
+
   return (
     <header className="bg-white border-b-[1px] border-gray-300 sticky top-0 z-50 w-full">
       <div className="container mx-auto flex items-center justify-between py-1 px-4 lg:px-8">
         {/* Left Section: Logo */}
         <div className="flex items-center space-x-4">
           <Image
-            src= {pik}// Replace with the actual logo path
+            src={pik}// Replace with the actual logo path
             alt="Bata Logo"
-            className="w-32 lg:w-32 lg:h-24"
+            className="w-40 lg:w-32 lg:h-24"
           />
         </div>
         {/* Center Section: Navigation */}
@@ -50,18 +64,18 @@ export default function Header() {
             </svg>
           </button>
           <div className="input hidden  space-x-5 lg:flex items-center">
-           <div className=' border-2 border-b-yellow-400 border-transparent p-1 '>
-             <input className='bg-transparent outline-none  text-black ' type="text" placeholder='Search...' />
-            <i className="fa-solid fa-magnifying-glass"></i>
-           </div>
+            <form className=' border-2 border-b-red-500 border-transparent p-1 ' onSubmit={handleFormSubmit}>
+              <input className='bg-transparent outline-none  text-black ' type="text" placeholder='Search...' value={query} onChange={handleFormChange} />
+              <button type="submit"><i className="fa-solid fa-magnifying-glass"></i></button>
+            </form>
 
             <Link href="/cart">
-            <i className="fa-brands fa-opencart"></i></Link>
+              <i className="fa-brands fa-opencart"></i></Link>
             <i className="fa-regular fa-user"></i>
             <Link href="/Wishlist">
-            <i className="fa-regular fa-heart"></i></Link>
+              <i className="fa-regular fa-heart"></i></Link>
           </div>
-         
+
         </div>
       </div>
     </header>
