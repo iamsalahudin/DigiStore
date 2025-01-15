@@ -79,7 +79,6 @@ export default function Header() {
               <i className="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
-
           <div className="flex space-x-4">
             <Link href="/cart">
               <i className="fa-brands fa-opencart text-xl"></i>

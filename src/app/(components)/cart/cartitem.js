@@ -9,7 +9,7 @@ const Cartitem = ({product, data}) => {
 
     const handleQuantityChange = (e) => {
         const value = parseInt(e.target.value, 10); // Parse the input as an integer
-        data(value)
+        data(value);
         setQuantity(isNaN(value) ? 1 : value); // Ensure it's a valid number or default to 0
     };
     return (

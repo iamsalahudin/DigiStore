@@ -5,9 +5,7 @@ import productData from '../productdetails/productsData.json';
 import CartItem from '../(components)/cart/cartitem';
 import { useRef } from 'react';
 
-
 const cartItems = [1, 2, 4, 9, 11, 10];
-
 const page = () => {
     const [data , setData] = useState(1)
     if (!data){
@@ -20,11 +18,6 @@ const page = () => {
     const handlData = (childData) => {
         setData(childData)
     }
-
-    // const calculateGrandTotal = () => {
-       
-        
-    // };
     const calculateGrandTotal = () => {
         if (containerRef.current) {  // Check if containerRef is valid
             const totalDivs = containerRef.current.querySelectorAll('.totals-cart');
@@ -38,19 +31,6 @@ const page = () => {
             console.log("containerRef is null or not attached yet.");
         }
     };
-    
-
-
-    // useEffect(() => {
-    //     const totalDivs = containerRef.current.querySelectorAll('.totals-cart');
-    //     const newGrandTotal = Array.from(totalDivs).reduce((sum, div) => {
-    //         const total = parseFloat(div.dataset.total) || 0; // Read data-total value
-    //         return sum + total;
-    //     }, 0);
-    //     setGrandTotal(newGrandTotal);
-    //     console.log(newGrandTotal);
-    // }, [data]);
-
     useEffect(() => {
         // Use a check to ensure DOM is ready
         if (containerRef.current) {
