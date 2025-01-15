@@ -11,8 +11,8 @@ import Profile from '../(components)/Profile/Profile';
 const Page = () => {
    const testimonialData = [
       {
-        icon: <FcSalesPerformance />,
-        value: '10.5k',
+        icon: <FcSalesPerformance/>,
+        value: '10.5kk',
         description: 'Sellers active on our site',
         link: '/',
       },
