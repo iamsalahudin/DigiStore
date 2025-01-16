@@ -91,7 +91,7 @@ export default function ManageAccount() {
             <button
               className={`${
                 activeSection === "My Profile"
-                  ? "text-blue-600 font-bold"
+                  ? "text-red-600 font-bold"
                   : "text-gray-700"
               } hover:underline`}
               onClick={() => setActiveSection("My Profile")}
@@ -103,7 +103,7 @@ export default function ManageAccount() {
             <button
               className={`${
                 activeSection === "Address Book"
-                  ? "text-blue-600 font-bold"
+                  ? "text-red-600 font-bold"
                   : "text-gray-700"
               } hover:underline`}
               onClick={() => setActiveSection("Address Book")}
@@ -115,7 +115,7 @@ export default function ManageAccount() {
             <button
               className={`${
                 activeSection === "Payment"
-                  ? "text-blue-600 font-bold"
+                  ? "text-red-600 font-bold"
                   : "text-gray-700"
               } hover:underline`}
               onClick={() => setActiveSection("Payment")}
@@ -304,7 +304,7 @@ export default function ManageAccount() {
               <div className="flex justify-end space-x-4">
                 <button
                   type="submit"
-                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                  className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
                 >
                   Submit Address
                 </button>
@@ -370,7 +370,7 @@ export default function ManageAccount() {
               <div className="flex justify-end space-x-4">
                 <button
                   type="submit"
-                  className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+                  className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
                 >
                   Add Card
                 </button>
