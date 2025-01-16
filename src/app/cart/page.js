@@ -66,9 +66,9 @@ const page = () => {
                 </div>
                 <div className="border border-gray-500 p-5 flex flex-col sm:w-2/5">
                     <div className="font-semibold">Cart Total</div>
-                    <div className="flex justify-between border-b border-gray-400 py-4"><p>Subtotal:</p><p>{GrandTotal}</p></div>
+                    <div className="flex justify-between border-b border-gray-400 py-4"><p>Subtotal:</p><p>Rs. {GrandTotal}</p></div>
                     <div className="flex justify-between border-b border-gray-400 py-4"><p>Shipping:</p><p>FREE</p></div>
-                    <div className="flex justify-between py-4"><p>Total:</p><p>{GrandTotal}</p></div>
+                    <div className="flex justify-between py-4"><p>Total:</p><p>Rs. {GrandTotal}</p></div>
                     <button href="/" className="text-lg py-3 px-6 bg-[#DB4444] text-white hover:bg-[#af3838] w-64 mx-auto">Proceed to Checkout</button>
                 </div>
             </div>
